@@ -1,0 +1,106 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --line-border-filled: #0EA293;
+    --line-border-unfilled: #B9EDDD;
+}
+
+body {
+    font-family: 'Poppins', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 400px;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.progress-container::before {
+    content: "";
+    background-color: var(--line-border-unfilled);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.progress {
+    background-color: var(--line-border-filled);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .3s ease-in-out;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--line-border-unfilled);
+    border: 3px solid var(--line-border-unfilled);
+    transition: .5s ease-in-out;
+}
+
+.circle.active {
+    border-color: var(--line-border-filled);
+    color: var(--line-border-filled);
+}
+
+.btn {
+    background-color: var(--line-border-filled);
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', serif;
+
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-unfilled);
+    color: whitesmoke;
+    cursor: not-allowed;
+}
