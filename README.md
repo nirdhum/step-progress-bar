@@ -15,8 +15,7 @@ Perfect for beginners learning DOM manipulation, animations, and event handling 
 
 ## 🚀 Live Demo
 
-[🔗 View Live on GitHub Pages](https://your-username.github.io/progress-bar)  
-_(Update the link with your actual live site if deployed)_
+[🔗 View Live on GitHub Pages](https://nirdhum.github.io/step-progress-bar/)
 
 ## 🛠️ Technologies Used
 
@@ -36,7 +35,7 @@ progress-bar/
 
 ## Clone the repository
 
-- git clone https://github.com/your-username/progress-bar.git
+- git clone https://github.com/nirdhum/step-progress-bar.git
 - Navigate into the project directory
 - Open index.html in your browser
 
